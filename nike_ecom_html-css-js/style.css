@@ -28,6 +28,19 @@ section {
   padding: 2rem 9%;
 }
 
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--black);
+  padding: 1rem;
+}
+
+.heading span {
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -255,6 +268,57 @@ header .icons a:hover {
   padding: 1rem 0;
 }
 
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  flex: 1 1 30rem;
+}
+
+.products .box-container .box .content {
+  padding: 1.5rem;
+}
+
+.products .box-container .box img {
+  height: 10rem;
+  transform: rotate(-30deg);
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
+  margin: 8rem 2rem;
+}
+
+.products .box-container .box:hover img {
+  transform: rotate(-35deg) scale(1.2);
+}
+
+.products .box-container .box .icons {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+
+.products .box-container .box .icons a {
+  height: 4.5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border: 0.1rem solid var(--black);
+  border-radius: 0.5rem;
+  background: #fff;
+  margin-top: 0.5rem;
+}
+
 /* media queries */
 @media (max-width: 991px) {
   html {
@@ -314,5 +378,9 @@ header .icons a:hover {
 
   .home .slide-container .slide .image {
     padding-bottom: 6rem;
+  }
+
+  .heading {
+    font-size: 3rem;
   }
 }
