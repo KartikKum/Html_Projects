@@ -290,7 +290,7 @@ header .icons a:hover {
 
 .products .box-container .box img {
   height: 10rem;
-  transform: rotate(-30deg);
+  transform: rotate(-35deg);
   filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
   margin: 8rem 2rem;
 }
@@ -304,6 +304,10 @@ header .icons a:hover {
   flex-flow: column;
   position: absolute;
   top: 0.5rem;
+  left: -10rem;
+}
+
+.products .box-container .box:hover .icons {
   left: 1rem;
 }
 
@@ -317,6 +321,37 @@ header .icons a:hover {
   border-radius: 0.5rem;
   background: #fff;
   margin-top: 0.5rem;
+}
+
+.products .box-container .box .icons a:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+.products .box-container .box .content h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+.products .box-container .box .content .price {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+.products .box-container .box .content .price span {
+  color: var(--orange);
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.products .box-container .box .content .stars {
+  padding-bottom: 1rem;
+}
+
+.products .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
 }
 
 /* media queries */
